@@ -1,0 +1,22 @@
+import java.lang.*;
+class Solution {
+    public int[]  twoSum(int[] nums , int target ) {
+        int sum, i , j = 0 ; 
+         for( i=0; i<nums.length;i++) {
+                for ( j=0;j<nums.length;j++) {
+                      sum = nums[i] + nums[j];
+                              if( sum == 9){   
+                                System.out.println("SOlUTION IS ");
+                                   return new int[] { i , j };
+                                          }       
+                }
+         } 
+ throw new IllegalArgumentException("No two sum solution");
+
+    }
+    public static void main(String args[]){
+        Solution sol = new Solution();
+        int[] nums = new int[]{ 2 , 7 , 11 , 15 };
+        sol.twoSum(nums , 9 );   
+    }
+ }
