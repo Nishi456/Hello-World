@@ -1,0 +1,21 @@
+import java.lang.*;
+class Solution {
+    public int reverse(int x) {
+       int reverseno=0;
+        while( x!=0){
+            if (x>0){
+                reverseno = reverseno * 10 + x % 10;
+                x = x/10; 
+              }
+         else{
+                reverseno = reverseno * 10 + x % 10;
+                x = x/10; 
+               }
+        }
+     return reverseno;
+    }
+    public static void main(String arg[]){
+        Solution s = new Solution();
+        s.reverse(-123);     
+    } 
+}
